@@ -1,0 +1,14 @@
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.AssemblyInfoInputs.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.AssemblyInfo.cs
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.csproj.CoreCompileInputs.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\bin\Debug\net7.0\CowsOrBulls.exe
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\bin\Debug\net7.0\CowsOrBulls.deps.json
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\bin\Debug\net7.0\CowsOrBulls.runtimeconfig.json
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\bin\Debug\net7.0\CowsOrBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\bin\Debug\net7.0\CowsOrBulls.pdb
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\refint\CowsOrBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.pdb
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\CowsOrBulls.genruntimeconfig.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\CowsOrBulls\obj\Debug\net7.0\ref\CowsOrBulls.dll

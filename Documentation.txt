@@ -1,0 +1,41 @@
+1. Copy paste everything to a project.
+
+2. Renaming:
+
+Renamed variable name to userName
+
+Renamed variable nGuess to numberOfPlayerGuesses
+
+Renamed variable name (in showTopList) to userName
+
+Renamed variable playOn to gameIsOngoing
+
+Renamed variable goal to targetNumberToGuess across all of the program
+
+Renamed variable randomGenerator to randomNumberGenerator
+
+Renamed function checkBC to EvaluatePlayerGuess
+
+Renamed variable bbcc to evaluationResult
+
+Renamed "BBBB," into a string variable called correctEvaluation
+
+Renamed makeGoal to SetTargetNumber
+
+Renamed the StreamWriter from output to fileWriter
+
+Renamed answer to playerWantsToContinue
+
+Renamed cows to incorrectPositionNumberCount
+
+Renamed bulls to correctPositionNumberCount
+
+
+3. Breaking out:
+
+3.1:
+Created a function called RepeatUntilCorrectAnswer, which will loop so the player have to answer until a correct answer is given.
+
+Broke out the repetition of where the player had to repeatedly guess the target number until the player guesses correctly.
+
+3.2:
