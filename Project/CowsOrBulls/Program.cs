@@ -32,7 +32,7 @@
                 StreamWriter fileWriter = new StreamWriter("result.txt", append: true);
                 fileWriter.WriteLine(userName + "#&#" + numberOfPlayerGuesses);
                 fileWriter.Close();
-                showTopList();
+                showLeaderboard();
                 Console.WriteLine("Correct, it took " + numberOfPlayerGuesses + " guesses\nContinue?");
                 string playerWantsToContinue = Console.ReadLine();
                 if (playerWantsToContinue != null && playerWantsToContinue != "" && answer.Substring(0, 1) == "n")
@@ -105,37 +105,37 @@
             return "BBBB".Substring(0, correctPositionNumberCount) + "," + "CCCC".Substring(0, incorrectPositionNumberCount);
         }
 
-
-        static void showTopList()
+        //Self: Break the leaderboard into two parts: update and show
+        static void showLeaderboard()
         {
-            StreamReader input = new StreamReader("result.txt");
-            List<PlayerData> results = new List<PlayerData>();
-            string line;
-            while ((line = input.ReadLine()) != null)
+            StreamReader fileReader = new StreamReader("result.txt");
+            List<PlayerData> leaderboardData = new List<PlayerData>();
+            string currentLine;
+            while ((currentLine = fileReader.ReadLine()) != null)
             {
-                string[] nameAndScore = line.Split(new string[] { "#&#" }, StringSplitOptions.None);
-                string userName = nameAndScore[0];
-                int guesses = Convert.ToInt32(nameAndScore[1]);
-                PlayerData pd = new PlayerData(userName, guesses);
-                int pos = results.IndexOf(pd);
-                if (pos < 0)
+                string[] currentLeaderboardEntry = currentLine.Split(new string[] { "#&#" }, StringSplitOptions.None);
+                string currentLeaderboardName = currentLeaderboardEntry[0];
+                int currentLeaderboardGuesses = Convert.ToInt32(currentLeaderboardEntry[1]);
+                PlayerData playerLeaderboardEntry = new PlayerData(currentLeaderboardName, currentLeaderboardGuesses);
+                int leaderboardPosition = leaderboardData.IndexOf(playerLeaderboardEntry);
+                if (leaderboardPosition < 0)
                 {
-                    results.Add(pd);
+                    leaderboardData.Add(playerLeaderboardEntry);
                 }
                 else
                 {
-                    results[pos].Update(guesses);
+                    leaderboardData[leaderboardPosition].Update(currentLeaderboardGuesses);
                 }
 
 
             }
-            results.Sort((p1, p2) => p1.Average().CompareTo(p2.Average()));
+            leaderboardData.Sort((p1, p2) => p1.Average().CompareTo(p2.Average()));
             Console.WriteLine("Player   games average");
-            foreach (PlayerData p in results)
+            foreach (PlayerData playerEntry in leaderboardData)
             {
-                Console.WriteLine(string.Format("{0,-9}{1,5:D}{2,9:F2}", p.Name, p.NGames, p.Average()));
+                Console.WriteLine(string.Format("{0,-9}{1,5:D}{2,9:F2}", playerEntry.Name, playerEntry.NGames, playerEntry.Average()));
             }
-            input.Close();
+            fileReader.Close();
         }
     }
 

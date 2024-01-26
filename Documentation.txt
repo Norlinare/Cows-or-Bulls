@@ -30,6 +30,29 @@ Renamed cows to incorrectPositionNumberCount
 
 Renamed bulls to correctPositionNumberCount
 
+----------------------------------------
+
+Renamed showTopList to showLeaderboard
+
+Renamed input to fileReader
+
+Renamed line to currentLine
+
+Renamed results to leaderboardData
+
+Renamed pd to playerLeaderboardEntry
+
+Renamed pos to leaderboardPosition
+
+Renamed nameAndScore to currentLeaderboardEntry
+
+Renamed userName to currentLeaderboardName
+
+Renamed guesses to currentLeaderboardGuesses
+
+Renamed p to playerEntry
+
+
 
 3. Breaking out:
 
