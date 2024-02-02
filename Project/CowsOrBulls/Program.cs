@@ -1,4 +1,6 @@
-﻿namespace CowsOrBulls
+﻿
+
+namespace CowsOrBulls
 {
     class MainClass
     {
@@ -32,15 +34,17 @@
                 StreamWriter fileWriter = new StreamWriter("result.txt", append: true);
                 fileWriter.WriteLine(userName + "#&#" + numberOfPlayerGuesses);
                 fileWriter.Close();
-                showLeaderboard();
+                SetLeaderboard();
                 Console.WriteLine("Correct, it took " + numberOfPlayerGuesses + " guesses\nContinue?");
                 string playerWantsToContinue = Console.ReadLine();
-                if (playerWantsToContinue != null && playerWantsToContinue != "" && answer.Substring(0, 1) == "n")
+                if (playerWantsToContinue != null && playerWantsToContinue != "" && playerWantsToContinue.Substring(0, 1) == "n")
                 {
                     gameIsOngoing = false;
                 }
             }
         }
+
+
 
 
         static int RepeatUntilCorrectAnswer(string evaluationResult, string targetNumberToGuess)
@@ -106,7 +110,7 @@
         }
 
         //Self: Break the leaderboard into two parts: update and show
-        static void showLeaderboard()
+        static void SetLeaderboard()
         {
             StreamReader fileReader = new StreamReader("result.txt");
             List<PlayerData> leaderboardData = new List<PlayerData>();
@@ -124,16 +128,16 @@
                 }
                 else
                 {
-                    leaderboardData[leaderboardPosition].Update(currentLeaderboardGuesses);
+                    leaderboardData[leaderboardPosition].UpdatePlayerGuesses(currentLeaderboardGuesses);
                 }
 
 
             }
-            leaderboardData.Sort((p1, p2) => p1.Average().CompareTo(p2.Average()));
+            leaderboardData.Sort((playerOne, playerTwo) => playerOne.CalculateAverageGuessesPerGame().CompareTo(playerTwo.CalculateAverageGuessesPerGame()));
             Console.WriteLine("Player   games average");
             foreach (PlayerData playerEntry in leaderboardData)
             {
-                Console.WriteLine(string.Format("{0,-9}{1,5:D}{2,9:F2}", playerEntry.Name, playerEntry.NGames, playerEntry.Average()));
+                Console.WriteLine(string.Format("{0,-9}{1,5:D}{2,9:F2}", playerEntry.name, playerEntry.totalGamesPlayed, playerEntry.CalculateAverageGuessesPerGame()));
             }
             fileReader.Close();
         }
@@ -141,39 +145,39 @@
 
     class PlayerData
     {
-        public string Name { get; private set; }
-        public int NGames { get; private set; }
-        int totalGuess;
+        public string name { get; private set; }
+        public int totalGamesPlayed { get; private set; }
+        int totalPlayerGuesses;
 
 
         public PlayerData(string playerName, int guesses)
         {
-            this.Name = playerName;
-            NGames = 1;
-            totalGuess = guesses;
+            this.name = playerName;
+            totalGamesPlayed = 1;
+            totalPlayerGuesses = guesses;
         }
 
-        public void Update(int guesses)
+        public void UpdatePlayerGuesses(int guesses)
         {
-            totalGuess += guesses;
-            NGames++;
+            totalPlayerGuesses += guesses;
+            totalGamesPlayed++;
         }
 
-        public double Average()
+        public double CalculateAverageGuessesPerGame()
         {
-            return (double)totalGuess / NGames;
+            return (double)totalPlayerGuesses / totalGamesPlayed;
         }
 
 
-        public override bool Equals(Object p)
+        public override bool Equals(Object playerData)
         {
-            return Name.Equals(((PlayerData)p).Name);
+            return name.Equals(((PlayerData)playerData).name);
         }
 
 
         public override int GetHashCode()
         {
-            return Name.GetHashCode();
+            return name.GetHashCode();
         }
     }
 }

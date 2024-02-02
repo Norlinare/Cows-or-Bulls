@@ -30,8 +30,6 @@ Renamed cows to incorrectPositionNumberCount
 
 Renamed bulls to correctPositionNumberCount
 
-----------------------------------------
-
 Renamed showTopList to showLeaderboard
 
 Renamed input to fileReader
@@ -52,7 +50,25 @@ Renamed guesses to currentLeaderboardGuesses
 
 Renamed p to playerEntry
 
+----------------------------------------
 
+Renamed Name to name
+
+Renamed NGames to totalGamesPlayed
+
+Renamed totalGuess to totalPlayerGuesses
+
+Renamed function Update to UpdatePlayerGuesses
+
+Renamed function Average to CalculateAverageGuessesPerGame
+
+Renamed function Equals to EqualsPlayerName
+
+Renamed p to playerData (in Equals function)
+
+Renamed p1 to playerOne
+
+Renamed p2 to playerTwo
 
 3. Breaking out:
 
@@ -62,3 +78,47 @@ Created a function called RepeatUntilCorrectAnswer, which will loop so the playe
 Broke out the repetition of where the player had to repeatedly guess the target number until the player guesses correctly.
 
 3.2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To do:
+
+Double check every name
+
+Set up IO Integration for all use of file writing and reading - FileReader and FileWriter as a static class?
+
+Set up UserInterface for console.WriteLine - static class for writing paragraphs
+
+Set up GameController to ReadLines - static class for reading paragraphs
+
+Move the game to game logic - most if not all of it. Free up space in main
+
+Split core game loop into 3? chunks (1 already there?)
+
+Set up a leaderboard class?
+
