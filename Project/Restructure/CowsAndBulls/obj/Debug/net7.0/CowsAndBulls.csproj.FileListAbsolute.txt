@@ -1,0 +1,14 @@
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\bin\Debug\net7.0\CowsAndBulls.exe
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\bin\Debug\net7.0\CowsAndBulls.deps.json
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\bin\Debug\net7.0\CowsAndBulls.runtimeconfig.json
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\bin\Debug\net7.0\CowsAndBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\bin\Debug\net7.0\CowsAndBulls.pdb
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.AssemblyInfoInputs.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.AssemblyInfo.cs
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.csproj.CoreCompileInputs.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\refint\CowsAndBulls.dll
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.pdb
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\CowsAndBulls.genruntimeconfig.cache
+C:\Users\Imir\Desktop\Refactoring Porject - Laboration for turn in\Project\Restructure\CowsAndBulls\obj\Debug\net7.0\ref\CowsAndBulls.dll

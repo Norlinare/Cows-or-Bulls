@@ -50,8 +50,6 @@ Renamed guesses to currentLeaderboardGuesses
 
 Renamed p to playerEntry
 
-----------------------------------------
-
 Renamed Name to name
 
 Renamed NGames to totalGamesPlayed
@@ -82,22 +80,23 @@ Broke out the repetition of where the player had to repeatedly guess the target 
 
 
 
+4. Added Classes/Functions:
 
+4.1:
+GameLogic
 
+Used to store the core game loop as well as functions integral to the core game loop.
 
+RunGame()
 
+Used as a startup sequence for the game, running from Program.cs 
 
+4.2
+UserInterface - IO
 
+DisplayGameMessage()
 
-
-
-
-
-
-
-
-
-
+Used to replace Console.WriteLine to imply that the messages are for the game
 
 
 
