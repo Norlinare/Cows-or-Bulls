@@ -4,25 +4,25 @@
     {
         public string name { get; private set; }
         public int totalGamesPlayed { get; private set; }
-        int totalPlayerGuesses;
+        int _totalPlayerGuesses;
 
 
         public PlayerData(string playerName, int guesses)
         {
             this.name = playerName;
             totalGamesPlayed = 1;
-            totalPlayerGuesses = guesses;
+            _totalPlayerGuesses = guesses;
         }
 
         public void UpdatePlayerGuesses(int guesses)
         {
-            totalPlayerGuesses += guesses;
+            _totalPlayerGuesses += guesses;
             totalGamesPlayed++;
         }
 
         public double CalculateAverageGuessesPerGame()
         {
-            return (double)totalPlayerGuesses / totalGamesPlayed;
+            return (double)_totalPlayerGuesses / totalGamesPlayed;
         }
 
 

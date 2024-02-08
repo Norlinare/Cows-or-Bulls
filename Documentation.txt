@@ -54,7 +54,7 @@ Renamed Name to name
 
 Renamed NGames to totalGamesPlayed
 
-Renamed totalGuess to totalPlayerGuesses
+Renamed totalGuess to _totalPlayerGuesses
 
 Renamed function Update to UpdatePlayerGuesses
 
@@ -98,9 +98,14 @@ DisplayGameMessage()
 
 Used to replace Console.WriteLine to imply that the messages are for the game
 
+4.3
+GameController - GC
 
+Used to overwrite the old Console.ReadLine. Also takes a message when a prompt is given to the player.
 
+GetPlayerInput()
 
+GetPlayerInputWithPrompt()
 
 
 

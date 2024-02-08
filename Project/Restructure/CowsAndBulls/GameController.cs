@@ -4,14 +4,33 @@
     {
         public static string GetPlayerInput()
         {
-            return Console.ReadLine();
+            string playerInput = Console.ReadLine();
+
+            if (playerInput == null)
+            {
+                return string.Empty;
+            }
+            else
+            {
+                return playerInput;
+            }
+
         }
 
-        public static string GetPlayerInput(string promptToPlayer)
+        public static string GetPlayerInputWithPrompt(string promptToPlayer)
         {
             UI.DisplayGameMessage(promptToPlayer);
 
-            return Console.ReadLine();
+            string playerInput = Console.ReadLine();
+
+            if (playerInput == null)
+            {
+                return string.Empty;
+            }
+            else
+            {
+                return playerInput;
+            }
         }
     }
 }
